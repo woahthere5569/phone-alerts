@@ -1,0 +1,16 @@
+in order to make the cisco phones WORK with the server, you need to add this snippet of code to the SEP XML file.
+
+<authenticationURL>http://ALERT_SERVER_IP:8080/auth</authenticationURL>   <!-- inside <device> -->
+
+<vendorConfig>
+  <webAccess>0</webAccess>                                              <!-- 0 = web server on -->
+</vendorConfig><authenticationURL>http://ALERT_SERVER_IP:8080/auth</authenticationURL>   <!-- inside <device> -->
+
+<vendorConfig>
+  <webAccess>0</webAccess>                                              <!-- 0 = web server on -->
+</vendorConfig>
+
+also, THIS IS VERY IMPORTANT!!!!
+
+this ONLY works with cisco phones that support services AND a web server, it also might not work on cisco phones that run open SIP firmware
+at the moment.
